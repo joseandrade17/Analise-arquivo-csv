@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CSV File</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="upload-container">
+        <h1>Bem-vindo ao Nosso Site!</h1>
+    </header>
+    <div class="texto-apresentacao">
+        <h2>
+            <p>Seja muito bem-vindo ao nosso site! Estamos empolgados em apresentar nossa ferramenta poderosa</p>
+            <p>que vai revolucionar a maneira como você aborda a busca pela palavra-chave perfeita para o seu produto.</p>
+            <p>Sabemos que encontrar a palavra certa pode ser um desafio, mas com nossa ferramenta intuitiva e eficaz,</p>
+            <p>você estará no caminho certo para destacar-se no mercado!</p>
+        </h2>
+     </div>
+        
+        <div class="texto-apresentacao2">
+            <h2>
+                <p>Com o objetivo de impulsionar suas vendas, apresentamos nossa solução: um software web que utiliza um Banco de Dados</p>
+                <p>para aprimorar a escolha das palavras-chave na divulgação de produtos. Essa ferramenta não só auxiliará o cliente na maximização</p>
+                <p>retorno sobre seus investimentos em marketing, mas também fornecerá insights valiosos para aprimorar suas estratégias de vendas.</p>
+            </h2>
+        </div>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" accept=".csv">
+            <button type="submit">Clique em Avançar e faça acontecer!</button>
+        </form>
+        <a href="/" class="back-link">Página inicial</a>
+    </div>
+</body>
+</html>
+

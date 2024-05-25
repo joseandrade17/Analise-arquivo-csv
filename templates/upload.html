@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload CSV File</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="upload-container">
+        <h1>Obtenha insights poderosos com apenas um clique! </h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="file-upload" class="custom-file-upload">
+                Selecionar arquivo CSV
+            </label>
+            <input id="file-upload" type="file" name="file" accept=".csv"/>
+            <button class="botao" type="submit">Carregar</button>
+        </form>
+        <a href="/" class="back-link">Página inicial</a>
+    </div>
+</body>
+</html>
